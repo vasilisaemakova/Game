@@ -1,8 +1,8 @@
 #pragma once
-#include "Cell.h"
-#include "Player.h"
-#include "Field.h"
-#include "Controller.h"
+#include "GameLogic/Cell.h"
+#include "GameLogic/Player.h"
+#include "GameLogic/Field.h"
+#include "GameLogic/Controller.h"
 
 class CommandReader {
 public:

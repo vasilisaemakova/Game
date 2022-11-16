@@ -1,5 +1,5 @@
 #pragma once
-#include "Player.h"
+#include "GameLogic/Player.h"
 
 class PlayerView {
 private:

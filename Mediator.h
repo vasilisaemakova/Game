@@ -1,8 +1,8 @@
 #pragma once
 
-#include "Controller.h"
+#include "GameLogic/Controller.h"
 #include "CommandReader.h"
-#include "MedicalEvent.h"
+#include "Event/PlayerEvent/MedicalEvent.h"
 #include "lab_3/Observable/GameObservable.h"
 
 class Mediator {

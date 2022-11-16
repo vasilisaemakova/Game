@@ -1,8 +1,8 @@
 #include "CellView.h"
-#include "KeyEvent.h"
-#include "MedicalEvent.h"
-#include "TrapEvent.h"
-#include "WallLockEvent.h"
+#include "Event/FieldEvent/KeyEvent.h"
+#include "Event/PlayerEvent/MedicalEvent.h"
+#include "Event/PlayerEvent/TrapEvent.h"
+#include "Event/FieldEvent/WallLockEvent.h"
 
 
 char CellView::getCell(Cell & cell){

@@ -1,5 +1,5 @@
 #include "Controller.h"
-#include "ReturnEvent.h"
+#include "Event/ReturnEvent.h"
 
 Controller::Controller(Field *field, Player *player, GameObservable* observable) {
     this->field_ = field;

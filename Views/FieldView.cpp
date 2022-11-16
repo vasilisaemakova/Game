@@ -1,6 +1,6 @@
 #include <iostream>
 #include "FieldView.h"
-#include "Field.h"
+#include "GameLogic/Field.h"
 
 void FieldView::printField(Field *field) {
 

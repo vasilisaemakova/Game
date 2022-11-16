@@ -1,7 +1,7 @@
 #pragma once
 
 #include <iostream>
-#include "Cell.h"
+#include "GameLogic/Cell.h"
 
 class Field {
 public:

@@ -1,9 +1,9 @@
 #pragma once
 
-#include "Cell.h"
+#include "GameLogic/Cell.h"
 #include "Player.h"
 #include "Field.h"
-#include "PlayerView.h"
+#include "Views/PlayerView.h"
 #include "lab_3/Observable/GameObservable.h"
 
 class Controller {

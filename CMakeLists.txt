@@ -3,7 +3,7 @@ project(oop2_v)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(oop2_v main.cpp Player.cpp Player.h Mediator.cpp Mediator.h FieldView.cpp FieldView.h Field.cpp Field.h Event/Event.h Controller.cpp Controller.h CommandReader.cpp CommandReader.h CellView.cpp CellView.h Cell.cpp Cell.h EventPlayer.cpp EventPlayer.h TrapEvent.cpp TrapEvent.h ReturnEvent.h MedicalEvent.cpp MedicalEvent.h EventField.h KeyEvent.cpp KeyEvent.h WallLockEvent.cpp WallLockEvent.h PlayerView.cpp PlayerView.h
+add_executable(oop2_v main.cpp GameLogic/Player.cpp GameLogic/Player.h Mediator.cpp Mediator.h Views/FieldView.cpp Views/FieldView.h GameLogic/Field.cpp GameLogic/Field.h Event/Event.h GameLogic/Controller.cpp GameLogic/Controller.h CommandReader.cpp CommandReader.h Views/CellView.cpp Views/CellView.h GameLogic/Cell.cpp GameLogic/Cell.h Event/PlayerEvent/EventPlayer.cpp Event/PlayerEvent/EventPlayer.h Event/PlayerEvent/TrapEvent.cpp Event/PlayerEvent/TrapEvent.h Event/ReturnEvent.h Event/PlayerEvent/MedicalEvent.cpp Event/PlayerEvent/MedicalEvent.h Event/FieldEvent/EventField.h Event/FieldEvent/KeyEvent.cpp Event/FieldEvent/KeyEvent.h Event/FieldEvent/WallLockEvent.cpp Event/FieldEvent/WallLockEvent.h Views/PlayerView.cpp Views/PlayerView.h
         lab_3/Logger/Logger.h
         lab_3/Logger/ConsoleLogger.h
         lab_3/Logger/ConsoleLogger.cpp

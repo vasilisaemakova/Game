@@ -1,4 +1,4 @@
-#include "Cell.h"
+#include "GameLogic/Cell.h"
 
 class CellView {
 public:
