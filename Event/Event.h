@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
-#include "Player.h"
-#include "ReturnEvent.h"
+#include "../Player.h"
+#include "../ReturnEvent.h"
 
 class Event {
 public:

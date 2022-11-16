@@ -1,3 +1,4 @@
 #pragma once
 
-enum ReturnEvent {lose, stay, win, clean, nothing};
+enum ReturnEvent {lose, stay, win, keyup, health, damaged};
+

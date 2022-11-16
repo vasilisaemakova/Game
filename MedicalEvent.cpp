@@ -4,7 +4,7 @@ ReturnEvent MedicalEvent::make(Player *player) {
     int a = player->getHealth();
     a+=value;
     player->setHealth(a);
-    return clean;
+    return health;
 }
 
 MedicalEvent::MedicalEvent(int value) : EventPlayer(value) {}

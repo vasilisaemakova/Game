@@ -2,5 +2,5 @@
 
 ReturnEvent KeyEvent::make(Player *player) {
     player->setKey(true);
-    return clean;
+    return keyup;
 }

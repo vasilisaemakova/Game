@@ -8,7 +8,7 @@ ReturnEvent TrapEvent::make(Player *player) {
         return lose;
     }
     player->setHealth(a);
-    return nothing;
+    return damaged;
 }
 
 TrapEvent::TrapEvent(int value) : EventPlayer(value) {}

@@ -2,13 +2,31 @@
 #include "WallLockEvent.h"
 #include "TrapEvent.h"
 #include "KeyEvent.h"
+#include "lab_3/Observer/GameObserver.h"
+#include "lab_3/Logger/ConsoleLogger.h"
+#include "lab_3/Logger/FileLogger.h"
+
 #include <iostream>
+
+void Mediator::createObservable() {
+    auto* state_observer = new GameObserver;
+
+    state_observer->addLevel(ObserverLevel::State);
+    state_observer->addLevel(ObserverLevel::Error);
+    state_observer->addLevel(ObserverLevel::Info);
+    state_observer->addLogger(new ConsoleLogger());
+    state_observer->addLogger(new FileLogger("logger.txt"));
+
+    observable_.addObserver(state_observer);
+}
 
 Mediator::Mediator(size_t width, size_t height) /*: field_(width, height), controller_(&field_, &player_) */{
     //player_->setPos(2,2);
+    createObservable();
+
     field_ = new Field(width, height);
     player_ = new Player();
-    controller_ = new Controller(field_, player_);
+    controller_ = new Controller(field_, player_, &observable_);
 
     field_->updateIsAvailable(false, 0, 1);
     field_->updateIsAvailable(false, 0, 4);
@@ -46,6 +64,7 @@ bool Mediator::control(std::string str) {
         flag = controller_->move(0,1);
     }
     controller_->printField();
+
     return flag;
 }
 /*
